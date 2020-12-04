@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".TestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+
+
+       <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+           android:text="Guess the Player Name"
+           android:textSize="35sp"
+           android:textColorHint="#7A8089"
+           android:textStyle="bold"
+
+           />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oip" />
+
+        <LinearLayout
+            android:id="@+id/progreedetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+
+            >
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_weight="1"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"/>
+
+
+            <TextView
+                android:id="@+id/tvprogress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/10"
+                android:textSize="20sp"
+
+                android:gravity="center"
+                android:padding="15dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:text="Messi"
+            android:padding="10dp"
+            android:textSize="30dp"
+            android:background="@drawable/myback"
+            android:gravity="center"
+
+
+            />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Raina"
+        android:padding="10dp"
+        android:background="@drawable/myback"
+        android:textSize="30dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:background="@drawable/myback"
+        android:layout_height="wrap_content"
+        android:text="Rooney"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/myback"
+        android:text="Ronaldo"
+        android:textSize="30dp"
+        android:gravity="center"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Submit"
+            android:textSize="35dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
